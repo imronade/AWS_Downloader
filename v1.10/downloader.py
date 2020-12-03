@@ -31,10 +31,10 @@ else:
     print("output/stand_alone/"+currentDate, "folder already exists.")
 
 # setting up the date
-# print("Pastikan isi dengan benar ya")
-# tahun = str(input("Masukkan tahun (Contoh: 2020): "))
-# bulan = str(input("Masukkan bulan (Contoh: 08): "))
-# tanggal = str(input("Masukkan tanggal mulai (Contoh: 01): "))
+print("Pastikan isi dengan benar ya")
+tahun = str(input("Masukkan tahun (Contoh: 2020): "))
+bulan = str(input("Masukkan bulan (Contoh: 08): "))
+tanggal = str(input("Masukkan tanggal mulai (Contoh: 01): "))
 
 initialDate = tahun+"-"+bulan+"-"+tanggal
 akhirbulan = calendar.monthrange(int(tahun), int(bulan))[1]
