@@ -67,15 +67,13 @@ def find_list_code(data_list_json, nama_list_data):
 
 # make folder based on current date
 def checkFolder(oFolder,tahun=None,bulan=None):
-    listFolder = ['montly','plot']
-    for i in listFolder:
-        check_folder = os.path.isdir(f'output/{i}/{oFolder}/{tahun}/{bulan}/')
-        # If folder doesn't exist, then create it.
-        if not check_folder:
-            os.makedirs(f'output/{i}/{oFolder}/{tahun}/{bulan}/')
-            print(f'created folder : output/{i}/{oFolder}/{tahun}/{bulan}/')
-        else:
-            print(f'output/{i}/{oFolder}/{tahun}/{bulan}/, folder already exists.')
+    check_folder = os.path.isdir(f'output/monthly/{oFolder}/{tahun}/{bulan}/')
+    # If folder doesn't exist, then create it.
+    if not check_folder:
+        os.makedirs(f'output/monthly/{oFolder}/{tahun}/{bulan}/')
+        print(f'created folder : output/monthly/{oFolder}/{tahun}/{bulan}/')
+    else:
+        print(f'output/monthly/{oFolder}/{tahun}/{bulan}/, folder already exists.')
 
 # ===========================================================
 # preparation
